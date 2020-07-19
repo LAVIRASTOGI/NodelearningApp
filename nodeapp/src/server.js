@@ -1,0 +1,1 @@
+globalThis.t = 345;
