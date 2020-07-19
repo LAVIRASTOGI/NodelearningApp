@@ -1,10 +1,12 @@
 //sending email in node js using sendgrid third party  
 var nodemailer = require('nodemailer');
 var sendGridTransport = require('nodemailer-sendgrid-transport');
+const APIkeyvar = require('../sendgrid.env')
+const apiKey = APIkeyvar.APIkey;
 
 var transporter = nodemailer.createTransport(sendGridTransport({
     auth: {
-        api_key: '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'
+        api_key: apiKey
     }
 }))
 transporter.sendMail({
