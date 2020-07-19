@@ -1,4 +1,5 @@
 require('colors')
 require('./server')
 
-console.log("hello world ".green + 345)
+
+console.log("hello world ".green)
